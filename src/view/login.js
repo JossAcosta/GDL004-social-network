@@ -1,6 +1,4 @@
 import  {autEmailPass, sing_socialNewtwork} from '../models/auth.js';
-
-
 import {btnSingInUp} from './commonElements.js';
 
 

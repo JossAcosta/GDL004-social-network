@@ -21,7 +21,8 @@
 }
 //crear cuenta con tu email y password
 function createUser(suemail, supassword) {
-  firebase.auth().createUserWithEmailAndPassword(suemail, supassword).catch(function (error) {
+  firebase.auth().createUserWithEmailAndPassword(suemail, supassword)
+  .catch(function (error) {
     let errorCode = error.code;
     let errorMessage = error.message;
     history.pushState("home.js", "home", "#/Home");
@@ -47,6 +48,8 @@ function sing_socialNewtwork(provider){
     
   });
 }
+
+
 export {
   autEmailPass,
   createUser,
